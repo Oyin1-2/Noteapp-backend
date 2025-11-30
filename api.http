@@ -1,0 +1,19 @@
+POST http://127.0.0.1:8000/api/token/
+Content-Type: application/json
+
+{
+    "username": "Emmanuel",
+    "password": "string123"
+}
+
+###
+POST http://127.0.0.1:8000/notes/
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzYyMDQwMTI3LCJpYXQiOjE3NjIwMzk4MjcsImp0aSI6ImQ0MzRmNWM1ZTNhYjQ3MTE5ODQ2ODA1MzM5YzYzMDFhIiwidXNlcl9pZCI6IjIifQ.V0xW6iC5uRCBWzL9oVKZA7yWbGJh_L5BxDxWm8qoplA
+
+
+{
+    "title": "Sample Note",
+    "content": "This is a sample note content. It demonstrates JWT authentication, and how to use tokens to access protected endpoints.",
+    "author": "2"
+}
